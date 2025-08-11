@@ -1,6 +1,6 @@
 import React, { useMemo, useCallback } from 'react';
 
-export const Products = ({ itemArray, sort, setSort }) => {
+export const ProductsTable = ({ itemArray, sort, setSort }) => {
   const headers = ['ID', 'Product', 'Category', 'User'];
   const handleSorting = useCallback(
     (type, ascOrder) => {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import usersFromServer from './api/users';
 import categoriesFromServer from './api/categories';
 import productsFromServer from './api/products';
-import { Products } from './components/Products/Products';
+import { ProductsTable } from './components/Products/ProductsTable';
 import { Filter } from './components/Filter/Filter';
 
 export const App = () => {
@@ -68,7 +68,7 @@ export const App = () => {
         </div>
 
         <div className="box table-container">
-          <Products
+          <ProductsTable
             itemArray={filteredProducts}
             sort={sort}
             setSort={setSort}
